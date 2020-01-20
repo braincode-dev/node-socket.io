@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="/">Socket.io</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="messages-list d-none">
+                    <h2 class="mb-4">Messages</h2>
+                    <div class="new-messages">
+                    <!-- new message  -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="user-list d-none">
+                    <h2>Users</h2>
+                    <ul class="list-group list-group-flush">
+                        <!-- list users  -->
+                    </ul>
+                </div>
+                <div class="login-form-container">
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="nickname">Nickname</label>
+                            <input type="text" class="form-control" id="nickname">
+                        </div>
+                        <button type="submit" class="btn btn-outline-success w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="message-form-container fixed-bottom container pb-4">
+            <form class="message-form d-none">
+                <div class="form-row">
+                    <div class="col-10">
+                        <input type="text" class="form-control message" placeholder="message...">
+                    </div>
+                    <div class="col-2">
+                        <button type="submit" class="btn btn-outline-dark w-100">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/style.js"></script>
+</body>
+
+</html>
